@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>厭世貓宇宙 | 讓故事被走進去</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="text-gray-900">
+
+    <nav id="navbar" class="fixed top-0 w-full flex justify-between items-center px-6 md:px-12 py-6 z-40 bg-[#f7f7f7]/90 backdrop-blur-sm">
+        <a href="index.html" class="text-xl tracking-widest font-bold serif">LOGO</a>
+        <div class="hidden lg:flex space-x-10 text-xs uppercase tracking-wider text-gray-500 font-bold">
+            <a href="about.html" class="hover:text-black">關於我們</a>
+            <a href="services.html" class="hover:text-black">服務項目</a>
+            <a href="works.html" class="hover:text-black">作品集</a>
+            <a href="events.html" class="hover:text-black">演出與消息</a>
+            <a href="collaborate.html" class="hover:text-black">合作方式</a>
+            <a href="contact.html" class="hover:text-black">聯絡我們</a>
+        </div>
+    </nav>
+
+        <main class="relative z-10">
+        <!-- Banner Section -->
+        <div class="h-screen flex flex-col justify-center items-start px-6 md:px-12 relative overflow-hidden">
+            <!-- Background Banner Image -->
+            <div class="absolute inset-0 z-0">
+                <img src="img/1.jpg" alt="主視覺" class="w-full h-full object-cover object-[75%_center] md:object-center">
+                <div class="absolute inset-0 bg-gradient-to-r from-black/80 via-black/50 to-black/20 md:to-transparent"></div>
+            </div>
+
+            <div class="text-left fade-in-section relative z-10">
+                <h1 class="text-4xl md:text-6xl mb-6 text-white leading-tight">讓每一次登場，<br>都被記住</h1>
+                <p class="text-gray-200 max-w-lg text-sm leading-relaxed mb-10">
+                    〇〇表演藝術團隊，為品牌活動、藝術節與校園打造現場演出。
+                </p>
+                <div class="flex gap-4">
+                    <a href="contact.html" class="px-8 py-3 bg-white text-black text-xs tracking-widest uppercase hover:bg-gray-200 transition">預約演出</a>
+                    <a href="works.html" class="px-8 py-3 border border-white text-white text-xs tracking-widest uppercase hover:bg-white hover:text-black transition">看我們的作品</a>
+                </div>
+            </div>
+            <div class="absolute bottom-10 left-1/2 -translate-x-1/2 animate-bounce text-gray-300 text-xs tracking-widest z-10">
+                SCROLL DOWN
+            </div>
+        </div>
+
+        <!-- Pinned Scroll Track -->
+        <div id="scroll-track" class="w-full relative" style="height: 400vh;">
+            <div class="sticky top-0 w-full h-screen overflow-hidden flex items-center justify-center bg-[#e4e5e7]">
+                
+                <h1 id="bg-text" class="absolute text-[12vw] leading-none font-serif text-white opacity-60 whitespace-nowrap select-none mix-blend-exclusion z-0 transition-opacity duration-700">We'll show it</h1>
+                
+                <div class="absolute inset-0 max-w-[1400px] mx-auto w-full h-full pointer-events-none">
+                    
+                    <div class="pinned-item card-trigger absolute left-[5vw] md:left-[10vw] w-[90vw] md:w-[35vw] h-[40vh] md:h-[50vh] pointer-events-auto" data-id="about" style="transform: translateY(150vh); opacity: 0;">
+                        <div class="img-wrapper w-full h-full relative overflow-hidden group">
+                            <img src="img/a.JPG" class="trigger-img w-full h-full object-cover grayscale group-hover:grayscale-0 transition duration-700 transform group-hover:scale-105" alt="關於我們">
+                        </div>
+                        <div class="absolute -bottom-14 left-0">
+                            <span class="text-base font-medium text-gray-500">01</span>
+                            <h2 class="text-xl font-serif mt-1">關於我們</h2>
+                        </div>
+                    </div>
+                    
+                    <div class="pinned-item card-trigger absolute right-[5vw] md:right-[10vw] w-[90vw] md:w-[35vw] h-[40vh] md:h-[50vh] pointer-events-auto" data-id="services" style="transform: translateY(150vh); opacity: 0;">
+                        <div class="img-wrapper w-full h-full relative overflow-hidden group">
+                            <img src="img/b.PNG" class="trigger-img w-full h-full object-cover object-top grayscale group-hover:grayscale-0 transition duration-700 transform group-hover:scale-105" style="object-position: top;" alt="服務項目">
+                        </div>
+                        <div class="absolute -bottom-14 left-0">
+                            <span class="text-base font-medium text-gray-500">02</span>
+                            <h2 class="text-xl font-serif mt-1">服務項目</h2>
+                        </div>
+                    </div>
+
+                    <div class="pinned-item card-trigger absolute left-[5vw] md:left-[10vw] w-[90vw] md:w-[35vw] h-[40vh] md:h-[50vh] pointer-events-auto" data-id="works" style="transform: translateY(150vh); opacity: 0;">
+                        <div class="img-wrapper w-full h-full relative overflow-hidden group">
+                            <img src="img/d.jpg" class="trigger-img w-full h-full object-cover object-[center_63%] grayscale group-hover:grayscale-0 transition duration-700 transform group-hover:scale-105" style="object-position: center 63%;" alt="作品集">
+                        </div>
+                        <div class="absolute -bottom-14 left-0">
+                            <span class="text-base font-medium text-gray-500">03</span>
+                            <h2 class="text-xl font-serif mt-1">作品集</h2>
+                        </div>
+                    </div>
+
+                    <div class="pinned-item card-trigger absolute right-[5vw] md:right-[10vw] w-[90vw] md:w-[35vw] h-[40vh] md:h-[50vh] pointer-events-auto" data-id="events" style="transform: translateY(150vh); opacity: 0;">
+                        <div class="img-wrapper w-full h-full relative overflow-hidden group">
+                            <img src="img/e.JPG" class="trigger-img w-full h-full object-cover grayscale group-hover:grayscale-0 transition duration-700 transform group-hover:scale-105" alt="演出與消息">
+                        </div>
+                        <div class="absolute -bottom-14 left-0">
+                            <span class="text-base font-medium text-gray-500">04</span>
+                            <h2 class="text-xl font-serif mt-1">演出與消息</h2>
+                        </div>
+                    </div>
+
+                    <div class="pinned-item card-trigger absolute left-[5vw] md:left-[10vw] w-[90vw] md:w-[35vw] h-[40vh] md:h-[50vh] pointer-events-auto" data-id="collaborate" style="transform: translateY(150vh); opacity: 0;">
+                        <div class="img-wrapper w-full h-full relative overflow-hidden group">
+                            <img src="img/f.jpg" class="trigger-img w-full h-full object-cover grayscale group-hover:grayscale-0 transition duration-700 transform group-hover:scale-105" alt="合作方式">
+                        </div>
+                        <div class="absolute -bottom-14 left-0">
+                            <span class="text-base font-medium text-gray-500">05</span>
+                            <h2 class="text-xl font-serif mt-1">合作方式</h2>
+                        </div>
+                    </div>
+
+                    <div class="pinned-item card-trigger absolute right-[5vw] md:right-[10vw] w-[90vw] md:w-[35vw] h-[40vh] md:h-[50vh] pointer-events-auto" data-id="contact" style="transform: translateY(150vh); opacity: 0;">
+                        <div class="img-wrapper w-full h-full relative overflow-hidden group">
+                            <img src="img/g.jpg" class="trigger-img w-full h-full object-cover grayscale group-hover:grayscale-0 transition duration-700 transform group-hover:scale-105" alt="聯絡我們">
+                        </div>
+                        <div class="absolute -bottom-14 left-0">
+                            <span class="text-base font-medium text-gray-500">06</span>
+                            <h2 class="text-xl font-serif mt-1">聯絡我們</h2>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-black text-white px-6 md:px-12 py-16">
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-start md:items-center">
+            <div class="mb-8 md:mb-0">
+                <div class="text-2xl tracking-widest font-bold serif mb-4">LOGO</div>
+                <p class="text-gray-400 text-sm">電話：02-1234-5678</p>
+                <p class="text-gray-400 text-sm mt-1">Email：contact@example.com</p>
+            </div>
+            <div class="flex space-x-6 text-sm mb-8 md:mb-0">
+                <a href="#" class="hover:text-gray-400">Facebook</a>
+                <a href="#" class="hover:text-gray-400">Instagram</a>
+            </div>
+        </div>
+        <div class="max-w-7xl mx-auto border-t border-gray-800 mt-12 pt-8 text-xs text-gray-500">
+            © 2026 厭世貓宇宙 Misanthropic Cat Universe All Rights Reserved.
+        </div>
+    </footer>
+
+    <!-- 動畫展開視窗 -->
+    <div id="detail-view" class="fixed inset-0 z-50 bg-[#f7f7f7] flex">
+        <button id="close-btn" class="absolute top-8 right-6 md:right-12 z-50 text-sm font-bold tracking-widest uppercase flex items-center gap-2 hover:text-gray-500 transition">
+            Close <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+        </button>
+        <img id="detail-image" src="" alt="">
+        <div class="w-full md:w-1/2 ml-auto h-full flex flex-col justify-center px-8 md:px-24">
+            <div id="detail-text-panel" class="max-w-md mt-40 md:mt-0 pb-20 md:pb-0">
+                <p id="detail-category" class="text-xs font-bold tracking-widest text-gray-400 mb-6 uppercase">Category</p>
+                <h2 id="detail-title" class="text-4xl md:text-5xl serif mb-6 leading-tight text-gray-900">Title</h2>
+                <p id="detail-subtitle" class="text-gray-500 mb-8 font-serif italic">Subtitle</p>
+                <p id="detail-desc" class="text-sm leading-loose text-gray-600 mb-10 whitespace-pre-line">Description</p>
+                <a href="#" id="detail-btn1" class="px-8 py-3 bg-black text-white text-xs tracking-widest uppercase inline-block hover:bg-gray-800">Btn1</a>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
